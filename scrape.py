@@ -21,7 +21,8 @@ async def main():
                     total_sum += num
                 except ValueError:
                     pass
-        print(f"Total Sum: {total_sum}")
+        print(f"Total Sum: {int(total_sum)}")
+        print(int(total_sum))
         await browser.close()
 
 if __name__ == '__main__':

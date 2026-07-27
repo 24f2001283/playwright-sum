@@ -1,0 +1,234 @@
+scrape	Set up job	﻿2026-07-27T13:54:23.6244786Z Current runner version: '2.335.1'
+scrape	Set up job	2026-07-27T13:54:23.6272545Z ##[group]Runner Image Provisioner
+scrape	Set up job	2026-07-27T13:54:23.6273762Z Hosted Compute Agent
+scrape	Set up job	2026-07-27T13:54:23.6274461Z Version: 20260707.563
+scrape	Set up job	2026-07-27T13:54:23.6275127Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+scrape	Set up job	2026-07-27T13:54:23.6275893Z Build Date: 2026-07-07T19:33:50Z
+scrape	Set up job	2026-07-27T13:54:23.6276602Z Worker ID: {b555e189-4b1b-4f4e-8cd7-58bc52f93464}
+scrape	Set up job	2026-07-27T13:54:23.6277312Z Azure Region: westus
+scrape	Set up job	2026-07-27T13:54:23.6277920Z ##[endgroup]
+scrape	Set up job	2026-07-27T13:54:23.6280263Z ##[group]Operating System
+scrape	Set up job	2026-07-27T13:54:23.6280935Z Ubuntu
+scrape	Set up job	2026-07-27T13:54:23.6281576Z 24.04.4
+scrape	Set up job	2026-07-27T13:54:23.6282098Z LTS
+scrape	Set up job	2026-07-27T13:54:23.6282648Z ##[endgroup]
+scrape	Set up job	2026-07-27T13:54:23.6283246Z ##[group]Runner Image
+scrape	Set up job	2026-07-27T13:54:23.6283881Z Image: ubuntu-24.04
+scrape	Set up job	2026-07-27T13:54:23.6284489Z Version: 20260720.247.2
+scrape	Set up job	2026-07-27T13:54:23.6285555Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+scrape	Set up job	2026-07-27T13:54:23.6287327Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+scrape	Set up job	2026-07-27T13:54:23.6288284Z ##[endgroup]
+scrape	Set up job	2026-07-27T13:54:23.6289989Z ##[group]GITHUB_TOKEN Permissions
+scrape	Set up job	2026-07-27T13:54:23.6292221Z Contents: read
+scrape	Set up job	2026-07-27T13:54:23.6292927Z Metadata: read
+scrape	Set up job	2026-07-27T13:54:23.6293562Z Packages: read
+scrape	Set up job	2026-07-27T13:54:23.6294123Z ##[endgroup]
+scrape	Set up job	2026-07-27T13:54:23.6296301Z Secret source: Actions
+scrape	Set up job	2026-07-27T13:54:23.6297187Z Prepare workflow directory
+scrape	Set up job	2026-07-27T13:54:23.6648119Z Prepare all required actions
+scrape	Set up job	2026-07-27T13:54:23.6690356Z Getting action download info
+scrape	Set up job	2026-07-27T13:54:24.0684294Z Download action repository 'actions/checkout@v3' (SHA:a37ce9120846195fa4ece8f58b268e6043cb2f26)
+scrape	Set up job	2026-07-27T13:54:24.5922320Z Download action repository 'actions/setup-python@v4' (SHA:7f4fc3e22c37d6ff65e88745f38bd3157c663f7c)
+scrape	Set up job	2026-07-27T13:54:24.8916577Z Complete job name: scrape
+scrape	Run actions/checkout@v3	﻿2026-07-27T13:54:24.9691304Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9701184Z ##[group]Run actions/checkout@v3
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9701992Z with:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9702473Z   repository: 24f2001283/playwright-sum
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9706277Z   token: ***
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9706717Z   ssh-strict: true
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9707177Z   persist-credentials: true
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9707682Z   clean: true
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9708134Z   sparse-checkout-cone-mode: true
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9708662Z   fetch-depth: 1
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9709302Z   fetch-tags: false
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9709737Z   lfs: false
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9710160Z   submodules: false
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9710631Z   set-safe-directory: true
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9711143Z   allow-unsafe-pr-checkout: false
+scrape	Run actions/checkout@v3	2026-07-27T13:54:24.9712021Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0516891Z (node:2109) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0518485Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0609238Z Syncing repository: 24f2001283/playwright-sum
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0611312Z ##[group]Getting Git version info
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0612131Z Working directory is '/home/runner/work/playwright-sum/playwright-sum'
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0613490Z [command]/usr/bin/git version
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0669789Z git version 2.54.0
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0693380Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0707908Z Temporarily overriding HOME='/home/runner/work/_temp/55121887-ce9a-4bd2-847b-95ef24079025' before making global git config changes
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0709691Z Adding repository directory to the temporary git global config as a safe directory
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0712184Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/playwright-sum/playwright-sum
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0760160Z Deleting the contents of '/home/runner/work/playwright-sum/playwright-sum'
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0765789Z ##[group]Initializing the repository
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0769601Z [command]/usr/bin/git init /home/runner/work/playwright-sum/playwright-sum
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0871814Z hint: Using 'master' as the name for the initial branch. This default branch name
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0873317Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0874573Z hint: to use in all of your new repositories, which will suppress this warning,
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0875934Z hint: call:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0876690Z hint:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0877550Z hint: 	git config --global init.defaultBranch <name>
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0878566Z hint:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0879651Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0880626Z hint: 'development'. The just-created branch can be renamed via this command:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0881450Z hint:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0882088Z hint: 	git branch -m <name>
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0882975Z hint:
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0883922Z hint: Disable this message with "git config set advice.defaultBranchName false"
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0885427Z Initialized empty Git repository in /home/runner/work/playwright-sum/playwright-sum/.git/
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0889141Z [command]/usr/bin/git remote add origin https://github.com/24f2001283/playwright-sum
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0928119Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0929210Z ##[group]Disabling automatic garbage collection
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0931034Z [command]/usr/bin/git config --local gc.auto 0
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0959571Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0960696Z ##[group]Setting up auth
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0970699Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.0996569Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.1323784Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.1355963Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.1576647Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.1614747Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.1616016Z ##[group]Fetching the repository
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.1622545Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +d1be8f99ca0b438db13d459c8ed0aea9489a2a15:refs/remotes/origin/master
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.4998573Z remote: Enumerating objects: 7, done.        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5001118Z remote: Counting objects:  14% (1/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5003291Z remote: Counting objects:  28% (2/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5005227Z remote: Counting objects:  42% (3/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5007140Z remote: Counting objects:  57% (4/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5008661Z remote: Counting objects:  71% (5/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5011023Z remote: Counting objects:  85% (6/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5012576Z remote: Counting objects: 100% (7/7)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5013927Z remote: Counting objects: 100% (7/7), done.        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5015387Z remote: Compressing objects:  25% (1/4)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5016898Z remote: Compressing objects:  50% (2/4)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5018260Z remote: Compressing objects:  75% (3/4)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5020021Z remote: Compressing objects: 100% (4/4)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5021486Z remote: Compressing objects: 100% (4/4), done.        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5023422Z remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0 (from 0)        
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5101888Z From https://github.com/24f2001283/playwright-sum
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5139350Z  * [new ref]         d1be8f99ca0b438db13d459c8ed0aea9489a2a15 -> origin/master
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5144380Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5146689Z ##[group]Determining the checkout info
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5149298Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5151153Z ##[group]Checking out the ref
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5153428Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5196715Z Reset branch 'master'
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5199734Z branch 'master' set up to track 'origin/master'.
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5206268Z ##[endgroup]
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5242874Z [command]/usr/bin/git log -1 --format='%H'
+scrape	Run actions/checkout@v3	2026-07-27T13:54:25.5267156Z 'd1be8f99ca0b438db13d459c8ed0aea9489a2a15'
+scrape	Set up Python	﻿2026-07-27T13:54:25.5625086Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+scrape	Set up Python	2026-07-27T13:54:25.5631548Z ##[group]Run actions/setup-python@v4
+scrape	Set up Python	2026-07-27T13:54:25.5632742Z with:
+scrape	Set up Python	2026-07-27T13:54:25.5633587Z   python-version: 3.10
+scrape	Set up Python	2026-07-27T13:54:25.5634579Z   check-latest: false
+scrape	Set up Python	2026-07-27T13:54:25.5644307Z   token: ***
+scrape	Set up Python	2026-07-27T13:54:25.5645241Z   update-environment: true
+scrape	Set up Python	2026-07-27T13:54:25.5646327Z   allow-prereleases: false
+scrape	Set up Python	2026-07-27T13:54:25.5647395Z ##[endgroup]
+scrape	Set up Python	2026-07-27T13:54:25.7044890Z ##[group]Installed versions
+scrape	Set up Python	2026-07-27T13:54:25.7147107Z (node:2193) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scrape	Set up Python	2026-07-27T13:54:25.7151111Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scrape	Set up Python	2026-07-27T13:54:25.7153002Z Successfully set up CPython (3.10.20)
+scrape	Set up Python	2026-07-27T13:54:25.7154836Z ##[endgroup]
+scrape	Install dependencies	﻿2026-07-27T13:54:25.7386200Z ##[group]Run python -m pip install --upgrade pip
+scrape	Install dependencies	2026-07-27T13:54:25.7387837Z [36;1mpython -m pip install --upgrade pip[0m
+scrape	Install dependencies	2026-07-27T13:54:25.7389586Z [36;1mpip install -r requirements.txt[0m
+scrape	Install dependencies	2026-07-27T13:54:25.7390939Z [36;1mplaywright install chromium[0m
+scrape	Install dependencies	2026-07-27T13:54:25.7497137Z shell: /usr/bin/bash -e {0}
+scrape	Install dependencies	2026-07-27T13:54:25.7498247Z env:
+scrape	Install dependencies	2026-07-27T13:54:25.7499565Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Install dependencies	2026-07-27T13:54:25.7501414Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+scrape	Install dependencies	2026-07-27T13:54:25.7503292Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Install dependencies	2026-07-27T13:54:25.7504978Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Install dependencies	2026-07-27T13:54:25.7507523Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Install dependencies	2026-07-27T13:54:25.7510361Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+scrape	Install dependencies	2026-07-27T13:54:25.7512699Z ##[endgroup]
+scrape	Install dependencies	2026-07-27T13:54:28.4626127Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (26.1.2)
+scrape	Install dependencies	2026-07-27T13:54:29.2300188Z Collecting playwright (from -r requirements.txt (line 1))
+scrape	Install dependencies	2026-07-27T13:54:29.2795585Z   Downloading playwright-1.61.0-py3-none-manylinux1_x86_64.whl.metadata (3.3 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.3035680Z Collecting pyee<14,>=13 (from playwright->-r requirements.txt (line 1))
+scrape	Install dependencies	2026-07-27T13:54:29.3037263Z   Downloading pyee-13.0.1-py3-none-any.whl.metadata (3.0 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.4808106Z Collecting greenlet<4.0.0,>=3.1.1 (from playwright->-r requirements.txt (line 1))
+scrape	Install dependencies	2026-07-27T13:54:29.4843006Z   Downloading greenlet-3.5.4-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.5044924Z Collecting typing-extensions (from pyee<14,>=13->playwright->-r requirements.txt (line 1))
+scrape	Install dependencies	2026-07-27T13:54:29.5075550Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.5139704Z Downloading playwright-1.61.0-py3-none-manylinux1_x86_64.whl (47.4 MB)
+scrape	Install dependencies	2026-07-27T13:54:29.7984898Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.4/47.4 MB 188.0 MB/s  0:00:00
+scrape	Install dependencies	2026-07-27T13:54:29.8020174Z Downloading greenlet-3.5.4-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (622 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.8090328Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 622.9/622.9 kB 99.6 MB/s  0:00:00
+scrape	Install dependencies	2026-07-27T13:54:29.8122467Z Downloading pyee-13.0.1-py3-none-any.whl (15 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.8173271Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+scrape	Install dependencies	2026-07-27T13:54:29.8871498Z Installing collected packages: typing-extensions, greenlet, pyee, playwright
+scrape	Install dependencies	2026-07-27T13:54:30.7049368Z 
+scrape	Install dependencies	2026-07-27T13:54:30.7063711Z Successfully installed greenlet-3.5.4 playwright-1.61.0 pyee-13.0.1 typing-extensions-4.16.0
+scrape	Install dependencies	2026-07-27T13:54:31.1100219Z Downloading Chrome for Testing 149.0.7827.55 (playwright chromium v1228) from https://cdn.playwright.dev/builds/cft/149.0.7827.55/linux64/chrome-linux64.zip
+scrape	Install dependencies	2026-07-27T13:54:32.1398630Z |                                                                                |   0% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:32.3281929Z |■■■■■■■■                                                                        |  10% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:32.4251185Z |■■■■■■■■■■■■■■■■                                                                |  20% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:32.5388623Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:32.6726066Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:32.7780820Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:32.8839268Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:33.0115215Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:33.1368483Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:33.2624386Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:33.3737269Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 177 MiB
+scrape	Install dependencies	2026-07-27T13:54:36.5599896Z Chrome for Testing 149.0.7827.55 (playwright chromium v1228) downloaded to /home/runner/.cache/ms-playwright/chromium-1228
+scrape	Install dependencies	2026-07-27T13:54:36.5605427Z Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+scrape	Install dependencies	2026-07-27T13:54:37.5124811Z |                                                                                |   0% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5162115Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5192899Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5218863Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5235891Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5251029Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5268772Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5298473Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5324828Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5348476Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5350951Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+scrape	Install dependencies	2026-07-27T13:54:37.5943140Z FFmpeg (playwright ffmpeg v1011) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+scrape	Install dependencies	2026-07-27T13:54:37.5946977Z Downloading Chrome Headless Shell 149.0.7827.55 (playwright chromium-headless-shell v1228) from https://cdn.playwright.dev/builds/cft/149.0.7827.55/linux64/chrome-headless-shell-linux64.zip
+scrape	Install dependencies	2026-07-27T13:54:38.6188152Z |                                                                                |   0% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:38.7716455Z |■■■■■■■■                                                                        |  10% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:38.8488424Z |■■■■■■■■■■■■■■■■                                                                |  20% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:38.9359199Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.0218051Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.1048859Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.1835798Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.2603202Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.3405591Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.4167068Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:39.4970429Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 114.2 MiB
+scrape	Install dependencies	2026-07-27T13:54:41.7778384Z Chrome Headless Shell 149.0.7827.55 (playwright chromium-headless-shell v1228) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1228
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	﻿2026-07-27T13:54:41.8061575Z ##[group]Run python scrape.py
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8061920Z [36;1mpython scrape.py[0m
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8108813Z shell: /usr/bin/bash -e {0}
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8109529Z env:
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8109803Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8110239Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8110685Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8111070Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8111455Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8111835Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:54:41.8112159Z ##[endgroup]
+scrape	Run Playwright script (24f2001283@ds.study.iitm.ac.in)	2026-07-27T13:55:01.4848850Z Total Sum: 2534924.0
+scrape	Post Set up Python	﻿2026-07-27T13:55:01.5445829Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+scrape	Post Set up Python	2026-07-27T13:55:01.5447109Z Post job cleanup.
+scrape	Post Set up Python	2026-07-27T13:55:01.6654133Z (node:2431) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scrape	Post Set up Python	2026-07-27T13:55:01.6655385Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scrape	Post Run actions/checkout@v3	﻿2026-07-27T13:55:01.6908201Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.6909776Z Post job cleanup.
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7595757Z (node:2439) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7597298Z (Use `node --trace-deprecation ...` to show where the warning was created)
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7631293Z [command]/usr/bin/git version
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7668466Z git version 2.54.0
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7739833Z Temporarily overriding HOME='/home/runner/work/_temp/c7f99160-55d0-4c6d-a335-1eb668da5416' before making global git config changes
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7741430Z Adding repository directory to the temporary git global config as a safe directory
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7745447Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/playwright-sum/playwright-sum
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7781806Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.7815326Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.8043184Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.8071219Z http.https://github.com/.extraheader
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.8081355Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+scrape	Post Run actions/checkout@v3	2026-07-27T13:55:01.8112943Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scrape	Complete job	﻿2026-07-27T13:55:01.8490070Z Cleaning up orphan processes
+scrape	Complete job	2026-07-27T13:55:01.8822376Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v3, actions/setup-python@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
